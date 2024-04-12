@@ -19,6 +19,8 @@ myFontTitle = tkinter.font.Font(family = 'Helvetica', size = 22, weight = "bold"
 
 
 
+## can create a general function that handles the toggling of any given LED
+## can do Dictionary Mapping for LEDs and Buttons
 
 ##Event Functions
 def redToggle():
