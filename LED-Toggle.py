@@ -7,9 +7,9 @@ RPi.GPIO.setmode(RPi.GPIO.BCM)
 
 ##Hardware definition  
 
-ledRed = led(17) ## board pin 11
-ledBlue = led(27) ## board pin 13
-ledGreen = led(22) ## board pin 15
+ledRed = LED(17) ## board pin 11
+ledBlue = LED(27) ## board pin 13
+ledGreen = LED(22) ## board pin 15
 
 ##GUI Definitions 
 win = Tk()
@@ -30,7 +30,7 @@ def blueToggle():
     ledBlue.off()
     ledBlueButton["text"] = "Turn Blue LED On"
   else:
-    ledRed.on()
+    ledBlue.on()
     ledBlueButton["text"] = "Turn Blue LED Off"
 
 def greenToggle():
