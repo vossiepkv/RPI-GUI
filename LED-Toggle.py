@@ -7,9 +7,9 @@ RPi.GPIO.setmode(RPi.GPIO.BCM)
 
 ##Hardware definition  
 
-ledRed = LED(17) ## board pin 11
-ledBlue = LED(27) ## board pin 13
-ledGreen = LED(22) ## board pin 15
+ledRed = LED(18) ## board pin 11
+ledBlue = LED(12) ## board pin 13
+ledGreen = LED(13) ## board pin 15
 
 ##GUI Definitions 
 win = Tk()
@@ -18,7 +18,7 @@ myfont = tkinter.font.Font(family = 'Helvetica', size = 12, weight = "bold")
 myFontTitle = tkinter.font.Font(family = 'Helvetica', size = 22, weight = "bold")
 
 
-
+## Refactoring potentials:
 ## can create a general function that handles the toggling of any given LED
 ## can do Dictionary Mapping for LEDs and Buttons
 
